@@ -1,0 +1,29 @@
+! name: Taiwan Research
+! description: Uprank trustworthy or Taiwan sources, downrank CN sites except trusted ones.
+! public: yes
+! author: pellaeon
+
+|*.edu^$boost=1
+|*.gov^$boost=1
+|*.tw^$boost=1
+|*.com.tw^$boost=1
+|*.ac.jp^$boost=1
+|*.edu.hk^$boost=1
+
+|*.gov.tw^$boost=2
+|*.edu.tw^$boost=2
+|*.idv.tw^$boost=2
+
+|*.cn^$downrank=1
+|*.xyz^$downrank=1
+|*.ai^$downrank=1
+
+! China sites that we don't want to downrank. 
+|*.juejin.cn^$boost=1
+
+! Slightly boost high quality sites
+$boost=2,site=news.ycombinator.com
+$boost=2,site=github.io
+$boost=2,site=github.com
+$boost=2,site=gitlab.io
+$boost=2,site=gitlab.com
