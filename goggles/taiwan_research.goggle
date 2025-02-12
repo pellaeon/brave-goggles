@@ -6,13 +6,21 @@
 |*.edu^$boost=1
 |*.gov^$boost=1
 |*.tw^$boost=1
+|*.taipei^$boost=1
 |*.com.tw^$boost=1
 |*.ac.jp^$boost=1
 |*.edu.hk^$boost=1
 
+! Taiwan moderated sites
 |*.gov.tw^$boost=2
 |*.edu.tw^$boost=2
 |*.idv.tw^$boost=2
+|*.pixnet.net^$boost=2
+|*.ptt.cc^$boost=2
+|*.pttweb.tw^$boost=2
+|*.dcard.tw^$boost=2
+|*.vocus.cc^$boost=2
+|*.mobile01.com^$boost=2
 
 |*.cn^$downrank=1
 |*.xyz^$downrank=1
@@ -27,3 +35,5 @@ $boost=2,site=github.io
 $boost=2,site=github.com
 $boost=2,site=gitlab.io
 $boost=2,site=gitlab.com
+$boost=2,site=wired.com
+$boost=2,site=theverge.com
